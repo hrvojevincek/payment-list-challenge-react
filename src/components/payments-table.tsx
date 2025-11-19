@@ -52,7 +52,7 @@ export const PaymentsTable = ({
         </ErrorBox>
       )}
 
-      {!error && (!payments || payments.length === 0) && (
+      {!isLoading && !error && (!payments || payments.length === 0) && (
         <EmptyBox>{I18N.NO_PAYMENTS_FOUND}</EmptyBox>
       )}
 
